@@ -3,9 +3,12 @@ package week1;
 public class Student {
 
     // TODO: khai báo các thuộc tính cho Student
-
+    private string name;
+    private string id;
+    private string groud;
+    private string email;
     // TODO: khai báo các phương thức getter, setter cho Student
-
+    
     /**
      * Constructor 1
      */
