@@ -8,10 +8,10 @@ public class Student {
     private string group;
     private string email;
     // TODO: khai báo các phương thức getter, setter cho Student
-    public string getName(){return name;}       public void setName(){this.name=name;}
-    public string getId(){return id;}           public void setId(){this.id=id;}
-    public string getGroud(){return group;}     public void setGroud(){this.group=group;}
-    public string getEmail(){return email;}     public void setEmail(){this.email=email;}
+    public string getName(string name){return name;}       public void setName(){this.name=name;}
+    public string getId(string id){return id;}           public void setId(){this.id=id;}
+    public string getGroud(string group){return group;}     public void setGroud(){this.group=group;}
+    public string getEmail(string email){return email;}     public void setEmail(){this.email=email;}
     /**
      * Constructor 1
      */
