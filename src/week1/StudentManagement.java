@@ -12,14 +12,78 @@ public class StudentManagement {
 
     void studentsByGroup() {
         // TODO:
+        int k = this.students.length;
         System.out.println("Danh sach sinh vien lop INT22041:");
+        for (int i = 0; i < this.students.length; i++) {
+            if (this.students[i].getGroup().equals("INT22041") && this.students[i].getName()!= "Student"){
+                System.out.println(this.students[i].getInfo());
+            }
+        }
+        System.out.println("Danh sach sinh vien lop INT22042:");
+        for (int i = 0; i < this.students.length; i++) {
+            if (this.students[i].getGroup().equals("INT22042") && this.students[i].getName()!= "Student") {
+                System.out.println(this.students[i].getInfo());
+            }
+        }
     }
 
     void removeStudent(String id) {
         // TODO:
+        int i,j;
+        for (i = 0; i < this.students.length; i++) {
+            if (this.students[i].getID().equals(id)) {
+                break;
+            }
+        }
+        for (j = i; j < (this.students.length)-1; j++) {
+            this.students[j] = this.students[j + 1];
+        }
+        this.students[(this.students.length)-1] = new Student();
+    }
+
     }
 
     public static void main(String[] args) {
         // TODO:
+        // cau 1:
+        Student s = new Student();
+        // cau 6:
+        Student a = new Student();
+        a.setName("Nguyen Xuan Duong");
+        a.setID("17020658");
+        a.setGroup("INT22042");
+        a.setEmail("nguyenduonguet62@gmail.com");
+        System.out.println(a.getInfo());
+        // cau 8:
+        Student b = new Student();
+        Student c = new Student("Le Van Trung","17020838","TrunTrau@gmail.com");
+        Student d = new Student(c);
+        System.out.println(b.getInfo());
+        System.out.println(c.getInfo());
+        System.out.println(d.getInfo());
+        // cau 10:
+        StudentManagement sm = new StudentManagement();
+        Student e = new Student("Pham Thi Quynh Trang","17020938","Nimmike@gmail.com");
+        System.out.println(sm.sameGroup(a,c));
+        System.out.println(sm.sameGroup(c,e));
+        // cau 11+12+13:
+        Student[] stlist = sm.students;
+        for (int i=0;i<100;i++){
+            stlist[i] = new Student();
+        }
+        // Them 3 sinh vien vao danh sach stlist
+        stlist[0]=a;
+        stlist[1]=c;
+        stlist[2]=e;
+        sm.studentsByGroup();
+        System.out.println("Danh sach sinh vien sau khi xoa ID: 17020838");
+        sm.removeStudent("17020838");
+        for (int i=0;i<sm.students.length;i++){
+            if (sm.students[i].getName()!="Student"){
+                System.out.println(sm.students[i].getInfo());
+            }
+        }
+
+    }
     }
 }
