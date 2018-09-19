@@ -56,5 +56,7 @@ public class StudentManagement {
         e.setEmail("Nimmike@gmail.com");
         System.out.println(e.getInfo());
         
-        
+        System.out.println(sameGroup(a,c));
+        System.out.println(sameGroup(e,c));
+        removeStudent("17020838");
 }
