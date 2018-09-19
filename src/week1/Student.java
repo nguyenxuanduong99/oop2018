@@ -8,30 +8,34 @@ public class Student {
     private String group;
     private String email;
     // TODO: khai báo các phương thức getter, setter cho Student
-   public String getName(){
-        return name;
-    }
     public void setName(String tenSV){
         this.name= tenSV;
+    }
+    public String getName(){
+        return name;
+    }
+    
+    public void setID(String maSV){
+        this.id = maSV;
     }
     public String getID(){
         return id;
     }
-    public void setID(String maSV){
-        this.id = maSV;
+    
+    public void setGroup(String Group){
+        this.group = Group;
     }
     public String getGroup(){
         return group;
     }
-    public void setGroup(String Group){
-        this.group = Group;
+    
+    public void setEmail(String Email) {
+        this.email = Email;
     }
     public String getEmail(){
         return email;
     }
-    public void setEmail(String Email) {
-        this.email = Email;
-    }
+    
      * Constructor 1
      */
     Student() {
