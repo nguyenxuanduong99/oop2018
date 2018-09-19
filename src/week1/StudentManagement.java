@@ -39,7 +39,7 @@ public class StudentManagement {
         for (j = i; j < k-1; j++) {
             this.students[j] = this.students[j + 1];
         }
-        this.students[k-1] = new Student();
+        
     }
 
     public static void main(String[] args) {
