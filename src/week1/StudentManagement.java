@@ -12,34 +12,11 @@ public class StudentManagement {
 
     void studentsByGroup() {
         // TODO:
-        int k = this.students.length;
-        System.out.println("Danh sach sinh vien lop INT22041:");
-        for (int i = 0; i < this.students.length; i++) {
-            if (this.students[i].getGroup().equals("INT22041") && this.students[i].getName()!= "Student"){
-                System.out.println(this.students[i].getInfo());
-            }
-        }
-        System.out.println("Danh sach sinh vien lop INT22042:");
-        for (int i = 0; i < this.students.length; i++) {
-            if (this.students[i].getGroup().equals("INT22042") && this.students[i].getName()!= "Student") {
-                System.out.println(this.students[i].getInfo());
-            }
-        }
+        
     }
 
     void removeStudent(String id) {
         // TODO:
-        int i,j;
-        for (i = 0; i < this.students.length; i++) {
-            if (this.students[i].getID().equals(id)) {
-                break;
-            }
-        }
-        for (j = i; j < (this.students.length)-1; j++) {
-            this.students[j] = this.students[j + 1];
-        }
-        this.students[(this.students.length)-1] = new Student();
-    }
 
     }
 
