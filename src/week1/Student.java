@@ -23,14 +23,14 @@ public class Student {
     public String getGroup(){
         return group;
     }
-    public void setGroup(String tenGroup){
-        this.group = tenGroup;
+    public void setGroup(String Group){
+        this.group = Group;
     }
     public String getEmail(){
         return email;
     }
-    public void setEmail(String nEmail) {
-        this.email = nEmail;
+    public void setEmail(String Email) {
+        this.email = Email;
     }
      * Constructor 1
      */
