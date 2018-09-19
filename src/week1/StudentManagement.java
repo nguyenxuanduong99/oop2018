@@ -55,6 +55,9 @@ public class StudentManagement {
         a.setGroup("INT22042");
         a.setEmail("Nimmike@gmail.com");
         System.out.println(a.getInfo());
-
-        st.removeStudent("17020838");
+        Student[] stlist = s.students;
+        for (int i=0;i<100;i++){
+            stlist[i] = new Student();
+        }
+        removeStudent("17020838");
 }
