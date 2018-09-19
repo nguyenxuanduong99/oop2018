@@ -12,19 +12,7 @@ public class StudentManagement {
 
     void studentsByGroup() {
         // TODO:
-        int k = this.students.length;
-        System.out.println("Danh sach sinh vien lop INT22041:");
-        for (int i = 0; i < k; i++) {
-            if (this.students[i].getGroup().equals("INT22041") && this.students[i].getName()!= "Student") {
-                System.out.println(this.students[i].getInfo());
-            }
-        }
-        System.out.println("Danh sach sinh vien lop INT22042:");
-        for (int i = 0; i < k; i++) {
-            if (this.students[i].getGroup().equals("INT22042") && this.students[i].getName()!= "Student") {
-                System.out.println(this.students[i].getInfo());
-            }
-        }
+        
     }
 
     void removeStudent(String id) {
@@ -46,27 +34,32 @@ public class StudentManagement {
         // TODO:
         
         Student s = new Student();
-        
+
         Student a = new Student();
         a.setName("Nguyen Xuan Duong");
         a.setID("17020658");
         a.setGroup("INT22042");
         a.setEmail("nguyenduonguet62@gmail.com");
         System.out.println(a.getInfo());
-        
-        Student b = new Student();
-        Student c = new Student("Le Van Trung","17020838","TrunTrau@gmail.com");
-        Student d = new Student(c);
-        System.out.println(b.getInfo());
+
+        Student c = new Student();
+        c.setName("Le Van Trung");
+        c.setID("17020838");
+        c.setGroup("INT22042");
+        c.setEmail("TrungTrau@gmail.com");
         System.out.println(c.getInfo());
-        System.out.println(d.getInfo());
-        
-        StudentManagement sm = new StudentManagement();
-        Student e = new Student("Pham Thi Quynh Trang","17020938","Nimmike@gmail.com");
-        System.out.println(sm.sameGroup(a,c));
-        System.out.println(sm.sameGroup(c,e));
-        
-        Student[] stlist = sm.students;
+
+        Student e = new Student();
+        a.setName("Pham Thi Quynh Trang");
+        a.setID("17020938");
+        a.setGroup("INT22042");
+        a.setEmail("Nimmike@gmail.com");
+        System.out.println(a.getInfo());
+
+        System.out.println(st.sameGroup(a,c));
+        System.out.println(st.sameGroup(c,e));
+
+        Student[] stlist = st.students;
         for (int i=0;i<100;i++){
             stlist[i] = new Student();
         }
@@ -74,15 +67,13 @@ public class StudentManagement {
         stlist[0]=a;
         stlist[1]=c;
         stlist[2]=e;
-        sm.studentsByGroup();
+        st.studentsByGroup();
         System.out.println("Danh sach sinh vien sau khi xoa ID: 17020838");
-        sm.removeStudent("17020838");
-        for (int i=0;i<sm.students.length;i++){
-            if (sm.students[i].getName()!="Student"){
-                System.out.println(sm.students[i].getInfo());
+        st.removeStudent("17020838");
+        for (int i=0;i<st.students.length;i++){
+            if (st.students[i].getName()!="Student"){
+                System.out.println(st.students[i].getInfo());
             }
         }
-
-    }
     }
 }
