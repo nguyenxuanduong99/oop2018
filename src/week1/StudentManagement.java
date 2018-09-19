@@ -56,9 +56,6 @@ public class StudentManagement {
         a.setEmail("Nimmike@gmail.com");
         System.out.println(a.getInfo());
 
-        System.out.println(st.sameGroup(a,c));
-        System.out.println(st.sameGroup(c,e));
-
         Student[] stlist = st.students;
         for (int i=0;i<100;i++){
             stlist[i] = new Student();
@@ -67,7 +64,6 @@ public class StudentManagement {
         stlist[0]=a;
         stlist[1]=c;
         stlist[2]=e;
-        st.studentsByGroup();
         System.out.println("Danh sach sinh vien sau khi xoa ID: 17020838");
         st.removeStudent("17020838");
         for (int i=0;i<st.students.length;i++){
