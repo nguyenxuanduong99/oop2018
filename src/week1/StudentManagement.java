@@ -50,11 +50,11 @@ public class StudentManagement {
         System.out.println(c.getInfo());
 
         Student e = new Student();
-        a.setName("Pham Thi Quynh Trang");
-        a.setID("17020938");
-        a.setGroup("INT22042");
-        a.setEmail("Nimmike@gmail.com");
-        System.out.println(a.getInfo());
+        e.setName("Pham Thi Quynh Trang");
+        e.setID("17020938");
+        e.setGroup("INT22042");
+        e.setEmail("Nimmike@gmail.com");
+        System.out.println(e.getInfo());
         
         
 }
