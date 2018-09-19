@@ -56,20 +56,5 @@ public class StudentManagement {
         a.setEmail("Nimmike@gmail.com");
         System.out.println(a.getInfo());
 
-        Student[] stlist = st.students;
-        for (int i=0;i<100;i++){
-            stlist[i] = new Student();
-        }
-
-        stlist[0]=a;
-        stlist[1]=c;
-        stlist[2]=e;
-        System.out.println("Danh sach sinh vien sau khi xoa ID: 17020838");
         st.removeStudent("17020838");
-        for (int i=0;i<st.students.length;i++){
-            if (st.students[i].getName()!="Student"){
-                System.out.println(st.students[i].getInfo());
-            }
-        }
-    }
 }
