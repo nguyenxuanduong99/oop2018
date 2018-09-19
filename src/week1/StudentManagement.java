@@ -59,5 +59,5 @@ public class StudentManagement {
         for (int i=0;i<100;i++){
             stlist[i] = new Student();
         }
-        removeStudent("17020838");
+        
 }
