@@ -70,7 +70,7 @@ public class Student {
 
     String getInfo() {
         // TODO:
-        return this.getName()+"\n"+this.getID()+"\n"+this.getGroup()+"\n"+this.getEmail();
+        return this.getName()+" "+this.getID()+" "+this.getGroup()+" "+this.getEmail();
 
     }
 }
