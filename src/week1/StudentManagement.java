@@ -55,9 +55,6 @@ public class StudentManagement {
         a.setGroup("INT22042");
         a.setEmail("Nimmike@gmail.com");
         System.out.println(a.getInfo());
-        Student[] stlist = s.students;
-        for (int i=0;i<100;i++){
-            stlist[i] = new Student();
-        }
+        
         
 }
