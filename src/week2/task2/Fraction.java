@@ -63,16 +63,11 @@ public class Fraction {
     }
     public boolean equals(Object obj)
     {
-        if(obj instanceof Fraction)
+        public boolean equals(Object obj)
         {
-            Fraction other = (Fraction) obj;
-            if(other.getNumerator()*this.getDenominator()==other.getDenominator()*this.getNumerator())
-            {
-                return true;
-            }
-            else
-                return false;
+            Fraction ps=(Fraction) obj;
+            if(this.numerator*ps.denominator==this.denominator*ps.numerator) return true;
+            else return false;
         }
-        return false;
     }
 }
