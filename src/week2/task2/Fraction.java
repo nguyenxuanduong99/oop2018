@@ -32,25 +32,47 @@ public class Fraction {
 
     public Fraction add(Fraction other) {
         // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
-        
-        return null;
+        Fraction ps=new Fraction(numerator 0,denominator 1);
+        ps.numerator=this.numerator*other.denominator+this.denominator*other.numerator;
+        ps.denominator=this.denominator*other.denominator;
+        return ps;
     }
 
     public Fraction subtract(Fraction other) {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
-        
-        return null;
+        Fraction ps=new Fraction(numerator 0,denominator 1);
+        ps.numerator=this.numerator*other.denominator-this.denominator*other.numerator;
+        ps.denominator=this.denominator*other.denominator;
+        return ps;
     }
 
     public Fraction multiply(Fraction other) {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
-        
-        return null;
+        Fraction ps=new Fraction(numerator 0,denominator 1);
+        ps.numerator=this.numerator*other.numerator;
+        ps.denominator=this.denominator*other.denominator;
+        return ps;
     }
 
     public Fraction divide(Fraction other) {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
-        
-        return null;
+        Fraction ps=new Fraction(numerator 0,denominator 1);
+        ps.numerator=this.numerator/other.numerator;
+        ps.denominator=this.denominator/other.denominator;
+        return ps;
+    }
+    public boolean equals(Object obj)
+    {
+        if(obj instanceof Fraction)
+        {
+            Fraction other = (Fraction) obj;
+            if(other.getNumerator()*this.getDenominator()==other.getDenominator()*this.getNumerator())
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+        return false;
     }
 }
