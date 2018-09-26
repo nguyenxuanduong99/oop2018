@@ -49,8 +49,8 @@ public class Fraction {
     public Fraction multiply(Fraction other) {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction ps=new Fraction(numerator 0,denominator 1);
-        ps.numerator=this.numerator*other.numerator;
-        ps.denominator=this.denominator*other.denominator;
+        ps.numerator=this.numerator*other.denominator;
+        ps.denominator=this.denominator*other.numertor;
         return ps;
     }
 
