@@ -65,8 +65,8 @@ public class Fraction {
     {
         public boolean equals(Object obj)
         {
-            Fraction ps=(Fraction) obj;
-            if(this.numerator*ps.denominator==this.denominator*ps.numerator) return true;
+            Fraction duong=(Fraction) obj;
+            if(this.numerator*duong.denominator==this.denominator*duong.numerator) return true;
             else return false;
         }
     }
