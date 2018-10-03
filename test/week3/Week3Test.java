@@ -1,5 +1,9 @@
 package week3;
 
+import com.sun.org.apache.xpath.internal.operations.Equals;
+import org.junit.Assert;
+import org.junit.Test;
+
 public class Week3Test {
 
     // TODO: Viết 5 testcase cho phương thức max()
