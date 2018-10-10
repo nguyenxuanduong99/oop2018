@@ -10,7 +10,7 @@ public class main {
         Cam c= new Cam();
         Camcaophong ccp= new Camcaophong();
         Camsanh cs=new Camsanh();
-        hq.Nguongoc();
+        hq.setTen("Qua");
         hq.setCan("20kilo");
         t.setVi("Ngot");
         c.setNgaynhap("22/10");
