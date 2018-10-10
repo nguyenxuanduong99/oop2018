@@ -7,7 +7,7 @@ package week4.task1;
     public class  Cam extends HoaQua {
     // Todo: Khai báo thuộc tính
         private String Xuatxu;
-         private String NgaynhapCam;
+        private String NgaynhapCam;
     //Todo: Khai báo phương thức
          public  String getXuatxu()
         {

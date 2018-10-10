@@ -6,7 +6,7 @@ package week4.task1;
     public class Tao extends HoaQua {
     // Todo: Khai báo thuộc tính
         private String Xuatxu;
-        private String NgaynhapTao;
+        private String Ngaynhap;
     //Todo: Khai báo phương thức
         public  String getXuatxu()
         {
@@ -16,17 +16,17 @@ package week4.task1;
         {
             this.Xuatxu= xuatxu;
         }
-        public String getNgaynhapTao()
+        public String getNgaynhap()
         {
-            return  this.NgaynhapTao;
+            return  this.Ngaynhap;
         }
-        public void setNgaynhapTao(String ds)
+        public void setNgaynhap(String ds)
         {
-            this.NgaynhapTao= ds;
+            this.Ngaynhap= ds;
         }
         public void PrintXuatXu()
         {
-            System.out.println("Xuat xu : "+getXuatxu()+"   "+getNgaynhapTao());
+            System.out.println("Xuat xu : "+getXuatxu()+"   "+getNgaynhap());
         }
 }
 
