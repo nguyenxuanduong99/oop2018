@@ -3,7 +3,7 @@ package week4.task1;
 /**
  * Created by CCNE on 10/10/2018.
  */
-public class CamSanh extends Cam {
+public class Camsanh extends Cam {
     private  int SoLuong;
     private  String mau;
     //TOdo: Khai Báo phương thức

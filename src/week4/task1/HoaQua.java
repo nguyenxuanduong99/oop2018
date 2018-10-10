@@ -8,18 +8,18 @@ public class HoaQua {
     private int can;
     private String Nguongoc;
 
-    public String getname() {
+    public String getTen() {
         return this.ten;
     }
-    public void setName(String ds)
+    public void setTen(String ds)
     {
         this.ten=ds;
     }
-    public int getamout()
+    public int getCan()
     {
         return this.can;
     }
-    public void setAmout(int ds)
+    public void setCan(int ds)
     {
         this.can=ds;
     }
