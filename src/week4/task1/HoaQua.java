@@ -6,17 +6,21 @@ package week4.task1;
 public class HoaQua {
     private String ten;
     private int can;
-    private String Nguongoc;
+    private String goc;
 
-    public String getTen() {
+    public String getTen()
+    {
         return this.ten;
     }
-    public void setTen(String ds)
+    public void setTen(String ten)
+
     {
-        this.ten=ds;
+
+        this.ten=ten;
     }
     public int getCan()
     {
+
         return this.can;
     }
     public void setCan(int ds)
@@ -24,15 +28,16 @@ public class HoaQua {
         this.can=ds;
     }
 
-    public String getNguongoc() {
-        return this.Nguongoc;
+    public String getGoc() {
+
+        return this.goc;
     }
 
-    public void setNguongoc(String nguongoc) {
-        this.Nguongoc() = nguongoc;
+    public void setGoc(String goc) {
+        this.goc = goc;
     }
-    public void PrintOrigin()
+    public void Nguongoc()
     {
-        System.out.println("Origin is " +this.Nguongoc);
+        System.out.println("Nguon goc " +this.goc);
     }
 }

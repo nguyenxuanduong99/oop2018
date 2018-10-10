@@ -10,8 +10,8 @@ public class main {
         Cam c= new Cam();
         Camcaophong ccp= new Camcaophong();
         Camsanh cs=new Camsanh();
-        hq.getTen();
-        hq.getNguongoc();
+        hq.Nguongoc();
+        hq.getCan();
         t.getVi();
         c.getNgaynhap();
         ccp.getMau();
