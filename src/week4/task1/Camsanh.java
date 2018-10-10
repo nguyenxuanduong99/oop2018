@@ -12,6 +12,10 @@ public class CamSanh extends Cam {
         return this.SoLuong;
     }
 
+    public void setSoLuongNhap(int soLuong) {
+        this.SoLuong= soLuong;
+    }
+
     public String getNoiBan() {
         return this.Xuatxu;
     }
@@ -20,9 +24,6 @@ public class CamSanh extends Cam {
         this.Xuatxu=xuatxu;
     }
 
-    public void setSoLuongNhap(int soLuong) {
-        this.SoLuong= soLuong;
-    }
     public void nhap()
     {
          System.out.println("So luong can nhap" + getSoLuong());
