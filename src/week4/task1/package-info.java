@@ -7,3 +7,10 @@
  * @version 0.1
  */
 package week4.task1;
+
+public class main{
+    public static void main(String[] aba) {
+        HoaQua hq= new HoaQua();
+        hq.getNguongoc();
+    }
+}
