@@ -11,10 +11,10 @@ public class main {
         Camcaophong ccp= new Camcaophong();
         Camsanh cs=new Camsanh();
         hq.Nguongoc();
-        hq.getCan();
-        t.getVi();
-        c.getNgaynhap();
-        ccp.getMau();
-        cs.getSoLuong();
+        hq.setCan("20kilo");
+        t.setVi("Ngot");
+        c.setNgaynhap("22/10");
+        ccp.setMau("Da cam");
+        cs.setSoLuong("1500");
     }
 }
