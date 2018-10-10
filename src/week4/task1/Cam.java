@@ -6,24 +6,24 @@ package week4.task1;
 
     public class  Cam extends HoaQua {
     // Todo: Khai báo thuộc tính
-        private String Xuatxu;
-        private String NgaynhapCam;
+        private String xuatxu;
+        private String ngaynhapCam;
     //Todo: Khai báo phương thức
          public  String getXuatxu()
         {
-            return this.Xuatxu;
+            return this.xuatxu;
         }
         public  void setXuatxu(String xuatxu)
         {
-            this.Xuatxu= xuatxu;
+            this.xuatxu= xuatxu;
         }
         public String getNgaynhapCam()
         {
-            return  this.NgaynhapCam;
+            return  this.ngaynhapCam;
         }
         public void setTypeOfCam(String ds)
         {
-            this.NgaynhapCam= ds;
+            this.ngaynhapCam= ds;
         }
         public void PrintXuatXu()
         {
