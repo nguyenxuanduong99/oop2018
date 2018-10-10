@@ -5,23 +5,23 @@ package week4.task1;
  */
 public class Camcaophong extends Cam{
     private  int SoLuong;
-    private  String Xuatxu;
+    private  String mau;
     //TOdo: Khai Báo phương thức
 
     public int getSoLuong() {
         return this.SoLuong;
     }
 
-    public void setSoLuong(int soLuong) {
+    public void setSoLuongNhap(int soLuong) {
         this.SoLuong= soLuong;
     }
 
-    public String getXuaxu() {
-        return this.Xuatxu;
+    public String getMau() {
+        return this.mau;
     }
 
     public void setXuatxu(String xuatxu) {
-        this.Xuatxu=xuatxu;
+        this.mau=mau;
     }
 
     public void nhap()

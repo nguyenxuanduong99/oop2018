@@ -6,27 +6,27 @@ package week4.task1;
 
     public class  Cam extends HoaQua {
     // Todo: Khai báo thuộc tính
-        private String xuatxu;
-        private String ngaynhapCam;
+    private String vi;
+    private String Ngaynhap;
     //Todo: Khai báo phương thức
-         public  String getXuatxu()
-        {
-            return this.xuatxu;
-        }
-        public  void setXuatxu(String xuatxu)
-        {
-            this.xuatxu= xuatxu;
-        }
-        public String getNgaynhapCam()
-        {
-            return  this.ngaynhapCam;
-        }
-        public void setTypeOfCam(String ds)
-        {
-            this.ngaynhapCam= ds;
-        }
-        public void PrintXuatXu()
-        {
-            System.out.println("Xuat xu : "+getXuatxu());
-        }
+    public  String getVi()
+    {
+        return this.vi;
+    }
+    public  void setXuatxu(String xuatxu)
+    {
+        this.vi= xuatxu;
+    }
+    public String getNgaynhap()
+    {
+        return  this.Ngaynhap;
+    }
+    public void setNgaynhap(String ds)
+    {
+        this.Ngaynhap= ds;
+    }
+    public void PrintXuatXu()
+    {
+        System.out.println("Mui vi : "+getVi()+"   ");
+    }
 }

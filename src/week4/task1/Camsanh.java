@@ -5,7 +5,7 @@ package week4.task1;
  */
 public class CamSanh extends Cam {
     private  int SoLuong;
-    private  String xuatxu;
+    private  String mau;
     //TOdo: Khai Báo phương thức
 
     public int getSoLuong() {
@@ -16,12 +16,12 @@ public class CamSanh extends Cam {
         this.SoLuong= soLuong;
     }
 
-    public String getXuatxu() {
-        return this.xuatxu;
+    public String getMau() {
+        return this.mau;
     }
 
     public void setXuatxu(String xuatxu) {
-        this.xuatxu=xuatxu;
+        this.mau=mau;
     }
 
     public void nhap()
