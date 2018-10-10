@@ -1,12 +1,24 @@
 package week4.task2;
 
 /**
- * Created by CCNE on 10/10/2018.
+ * class Circle kế thừa từ lớp Shape
  */
-public class Circle extends Shape {
-    static final double PI = 3.14;
+public class Circle extends Shape{
     private double radius;
-    //TODO: getter, setter
+    final private double Pi = 3.14;
+    public Circle(){
+        this.radius = 1.0;
+    }
+
+    public Circle(double radius){
+        this.radius = radius;
+    }
+    public Circle(double radius , String color , boolean filled){
+        this.radius = radius;
+        this.setColor(color);
+        this.setFilled(filled);
+    }
+
     public double getRadius() {
         return radius;
     }
@@ -14,52 +26,18 @@ public class Circle extends Shape {
     public void setRadius(double radius) {
         this.radius = radius;
     }
-    /**
-     * Hàm tạo không có tham số. Mặc định giá trị của radius = 1.0.
-     */
-    public Circle(){
-        radius = 1.0;
-    }
-
-    /**
-     * Hàm tạo có 1 tham số truyền vào
-     * @param radius bán kính ta muốn tạo
-     */
-    public Circle(double radius){
-        this.radius = radius;
-    }
-
-    /**
-     * phương thức khởi tạo có 3 tham số truyền vào
-     * @param radius    bán kính ta muốn tạo
-     * @param color     màu ta muốn tạo
-     * @param filled    thuộc tính filled ta muốn tạo
-     */
-    public Circle(double radius, String color, boolean filled){
-        super(color, filled);
-        this.radius = radius;
-    }
-    /**
-     * phương thức tính diện tích hình tròn
-     * @return  diện tích hình tròn
-     */
     public double getArea(){
-        return PI*Math.pow(radius,2);
+        return (Pi*getRadius()*getRadius());
     }
-
-    /**
-     * phương thức tính chu vi hình tròn
-     * @return  chu vi hình tròn
-     */
     public double getPerimeter(){
-        return PI*radius*2;
+        return (2*Pi*getRadius());
     }
 
     /**
-     * ghi đè lại phương thức toString ở lớp cơ sở
-     * @return  mặc định ở đây là Circle
+     * phương thức xuất ra thông tin class Circle
+     * @return color , filled , radius
      */
-    @Override
     public String toString() {
-        return "Circle";
+        return super.toString() +","+this.getRadius();
     }
+}
