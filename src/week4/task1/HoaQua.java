@@ -7,7 +7,7 @@ public class HoaQua {
     private String ten;
     private int can;
     private String Nguongoc;
-    //TODO: khai bao phuong thuc
+
     public String getname() {
         return this.ten;
     }
@@ -28,8 +28,8 @@ public class HoaQua {
         return this.Nguongoc;
     }
 
-    public void setNguongoc(String origin) {
-        this.Nguongoc() = origin;
+    public void setNguongoc(String nguongoc) {
+        this.Nguongoc() = nguongoc;
     }
     public void PrintOrigin()
     {
