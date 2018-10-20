@@ -1,34 +1,34 @@
-// class word
-import java.util.Scanner;
+package week5_6;
 
-public class Word
-{
-	public String word;
-	public String mean;
-	public String type;
-	public int STT;
+import javax.swing.*;
+import java.awt.*;
+import java.util.Random;
 
-	// ham tao
-	public Word()
-	{
+/**
+ * class Square kế thừa từ class Shape
+ */
+public class Square extends Shape{
+    private int size;
+    public Square(){
+        Random random = new Random();
+        this.size = random.nextInt(70);
+        this.point_temp.setX(random.nextInt(30));
+        this.point_temp.setY(random.nextInt(30));
+        this.point.setX(random.nextInt(6));
+        this.point.setY(random.nextInt(6));
+        this.color = new Color(random.nextInt(255) , random.nextInt(255) , random.nextInt(255));
 
-	}
+    }
 
-	// ham tao co tham so
-	public Word(int STT,String word, String mean, String type)
-	{
-		this.STT = STT;
-		this.word = word;
-		this.mean= mean;
-		this.type = type;
+    public void setSize(int size) {
+        this.size = size;
+    }
 
-	}
-
-	public void displayWord()
-	{
-
-		System.out.printf("\n|%-20s|%-38s|%-17s|",word,mean,type);
-		System.out.printf("\n|-----------------------------------------------------------------------------|");
-
-	}
+    public int getSize() {
+        return size;
+    }
+    @Override
+    public void move(){
+        super.move();
+    }
 }
