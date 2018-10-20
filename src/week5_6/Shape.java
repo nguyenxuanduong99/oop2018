@@ -1,35 +1,35 @@
 package week5_6;
 
+import javax.swing.*;
 import java.awt.*;
+import java.util.Random;
 
 /**
- * class tạo màu sắc và cách di chuyển của hình
+ * class Square kế thừa từ class Shape
  */
-public class Shape {
-    public Color color;
-    public Point point_temp = new Point();
-    public Point point = new Point();
+public class Square extends Shape{
+    private int size;
+    public Square(){
+        Random random = new Random();
+        this.size = random.nextInt(70);
+        this.point_temp.setX(random.nextInt(30));
+        this.point_temp.setY(random.nextInt(30));
+        this.point.setX(random.nextInt(6));
+        this.point.setY(random.nextInt(6));
+        this.color = new Color(random.nextInt(255) , random.nextInt(255) , random.nextInt(255));
 
-    public Color getColor() {
-        return color;
     }
 
-    public void setColor(Color color) {
-        this.color = color;
+    public void setSize(int size) {
+        this.size = size;
     }
 
-    /**
-     * phương thúc di chuyển hình
-     */
+    public int getSize() {
+        return size;
+    }
+    @Override
     public void move(){
-        if(point_temp.getX() < 0|| point_temp.getX() > 500){
-            point.setX(-point.getX());
-        }
-        if(point_temp.getY() < 0|| point_temp.getY() > 500){
-            point.setY(-point.getY());
-        }
-        point_temp.setX(point_temp.getX() + point.getX());
-        point_temp.setY(point_temp.getY()+point.getY());
+        super.move();
     }
 }
 
