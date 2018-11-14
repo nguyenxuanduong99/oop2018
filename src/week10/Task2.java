@@ -15,7 +15,7 @@ public class Task2 {
         }
     }
 
-    private static void sap_xep_noi_bot(int []A, int n) {
+    private static void sapxep(int []A, int n) {
         for(int i=0; i<n-1; i++) {
             for(int j=n-1; j>i; j--) {
                 if(A[j]<A[j-1]) {
@@ -36,7 +36,7 @@ public class Task2 {
         A = new int[n];
         nhap_mang(A, n);
         System.out.println("Mang sau sap xep la: ");
-        sap_xep_noi_bot(A, n);
+        sapxep(A, n);
         xuat_mang(A, n);
     }
 }
