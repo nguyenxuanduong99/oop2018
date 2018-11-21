@@ -1,7 +1,7 @@
 package week11;
 
 public class Task1 {
-    public<T>void swap(T[]arr,int i,int j){
+    public<T>void swap(T[]arr,int i,int j){//T kiểu dữ liệu chung
         if(i!=j){
             T temp =arr[i];
             arr[i]=arr[j];
@@ -14,7 +14,7 @@ public class Task1 {
             int b=i;
             for(int j=i+1;j<n;j++) {
                 if (arr[j].compareTo(arr[b]) <= 0) {
-                    b = j;
+                    b = j;//phan tu be nhat
                 }
             }
             swap(arr,i,b);
