@@ -3,21 +3,21 @@ package week11;
 public class Task2 {
     public<T>void swap(T[]arr,int i,int j){
         if(i!=j){
-            T tmp =arr[i];
+            T temp =arr[i];
             arr[i]=arr[j];
-            arr[j]=tmp;
+            arr[j]=temp;
         }
     }
     public<T extends Comparable<T>> void lon_nhat(T[]arr){
         int n=arr.length;
         for(int i=0;i<n-1;i++){
-            int min=i;
+            int b=i;
             for(int j=i+1;j<n;j++) {
-                if (arr[j].compareTo(arr[min]) <= 0) {
-                    min = j;
+                if (arr[j].compareTo(arr[b]) <= 0) {
+                    b = j;
                 }
             }
-            swap(arr,i,min);
+            swap(arr,i,b);
         }
         System.out.println(arr[n-1]);
     }
