@@ -53,7 +53,7 @@ abstract class Person {
     public abstract void printFamilyHas2Son();
     public abstract void printNewGeneration();
 }
-
+//có gia đình
 class Family extends Person{
     private String husband;
     private String wife;
@@ -119,7 +119,7 @@ class Family extends Person{
         }
     }
 }
-
+//độc thân
 class AlonePerson extends Person{
     String name;
     public AlonePerson(String name){
